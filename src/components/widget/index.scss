@@ -1,0 +1,124 @@
+.resize-handle{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    z-index: 88888;
+    pointer-events: auto;
+    &.top_left{
+        top: -8px;
+        left: -8px;
+        cursor: nw-resize;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            top: 4px;
+            left: 4px;
+        }
+    }
+    &.top{
+        top: -8px;
+        left: 50%;
+        margin-left: -8px;
+        cursor: n-resize;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            top: 4px;
+            left: 4px;
+        }
+    }
+    &.top_right{
+        top: -8px;
+        right: -8px;
+        cursor: ne-resize;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            top: 4px;
+            left: -4px;
+        }
+    }
+    &.right{
+        top: 50%;
+        right: -8px;
+        margin-top: -8px;
+        cursor: e-resize;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            top: 4px;
+            left: -4px;
+        }
+    }
+    &.bottom_right{
+        bottom: -8px;
+        right: -8px;
+        cursor: se-resize;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            top: -4px;
+            left: -4px;
+        }
+    }
+    &.bottom{
+        bottom: -8px;
+        left: 50%;
+        margin-left: -8px;
+        cursor: s-resize;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            top: -4px;
+            left: 4px;
+        }
+    }
+    &.bottom_left{
+        bottom: -8px;
+        left: -8px;
+        cursor: sw-resize;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            top: -4px;
+            left: 4px;
+        }
+    }
+    &.left{
+        top: 50%;
+        margin-top: -8px;
+        left: -8px;
+        cursor: w-resize;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            top: 4px;
+            left: 4px;
+        }
+    }
+}
+
